@@ -13,7 +13,7 @@ __int64 __fastcall DwmpActivateLivePreview(int a1, __int64 a2, __int64 a3, int a
   _DWORD v20[5]; // [rsp+4Ch] [rbp-14h]
   int v21; // [rsp+A8h] [rbp+48h] BYREF
 
-  if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 )
+  if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 ) // 0 - 1
     McTemplateU0tpq_EtwEventWriteTransfer(a1, a2: (unsigned int)ApipActivateLivePreview_Start, a3: a1, a4: a2, a5: a4);
   v9 = 1;
   if ( a4 <= 0 )
@@ -81,7 +81,7 @@ LABEL_16:
     MilInstrumentationCheckHR_MaybeFailFast(a1: 4u, a2: &qword_18001CA38, a3: 1u, a4: v12, a5: 0x52u, a6: v15);
   }
 LABEL_25:
-  if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 )
+  if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 ) // 0 - 1
     McTemplateU0tpq_EtwEventWriteTransfer(a1, a2: (unsigned int)ApipActivateLivePreview_Stop, a3: a1, a4: a2, a5: a4);
   return v13;
 }
