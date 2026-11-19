@@ -9,7 +9,7 @@ HRESULT __stdcall DwmFlush()
   _DWORD v7[4]; // [rsp+38h] [rbp-20h] BYREF
 
   v6 = 0;
-  if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 )
+  if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 ) // 0 - 1
     McGenEventWrite_EtwEventWriteTransfer(
       a1: (unsigned int)Microsoft_Windows_Dwm_Api_Provider_Context,
       a2: (unsigned int)ApiFlush_Start,
@@ -35,7 +35,7 @@ HRESULT __stdcall DwmFlush()
   }
   DoStackCaptureDirect(a1: v5, a2: v4);
 LABEL_5:
-  if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 )
+  if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 ) // 0 - 1
     McTemplateU0q_EtwEventWriteTransfer(a1: Microsoft_Windows_Dwm_Api_Provider_Context, a2: ApiFlush_Stop, a3: v2);
   return v2;
 }
