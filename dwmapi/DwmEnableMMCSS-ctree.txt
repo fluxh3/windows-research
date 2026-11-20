@@ -1,0 +1,85 @@
+0x1800028a4	71	{v6 = 0;if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 )McGenEventWrite_EtwEventWriteTransfer((unsigned int)Microsoft_Windows_Dwm_Api_Provider_Context, (unsigned int)ApiEnableMMCSS_Start, v1, 1, (__int64)v7);v7[0] = 1073741869;v7[1] = fEnableMMCSS;v3 …r, 0);v4 = v3;if ( v3 < 0 )DoStackCaptureDirect(v3, 0x25u);elsev4 = v6;if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 )McTemplateU0q_EtwEventWriteTransfer(Microsoft_Windows_Dwm_Api_Provider_Context, ApiEnableMMCSS_Stop, v4);return MilToDwmError(v4);}
+0x1800028a4	72	v6 = 0;
+0x1800028a4	2	v6 = 0
+	65	v6
+0x180002899	61	0
+0x1800028a8	73	if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 )McGenEventWrite_EtwEventWriteTransfer((unsigned int)Microsoft_Windows_Dwm_Api_Provider_Context, (unsigned int)ApiEnableMMCSS_Start, v1, 1, (__int64)v7);
+0x18000b744	71	McGenEventWrite_EtwEventWriteTransfer((unsigned int)Microsoft_Windows_Dwm_Api_Provider_Context, (unsigned int)ApiEnableMMCSS_Start, v1, 1, (__int64)v7);
+0x18000b744	72	McGenEventWrite_EtwEventWriteTransfer((unsigned int)Microsoft_Windows_Dwm_Api_Provider_Context, (unsigned int)ApiEnableMMCSS_Start, v1, 1, (__int64)v7);
+0x18000b744	57	McGenEventWrite_EtwEventWriteTransfer((unsigned int)Microsoft_Windows_Dwm_Api_Provider_Context, (unsigned int)ApiEnableMMCSS_Start, v1, 1, (__int64)v7)
+	64	McGenEventWrite_EtwEventWriteTransfer
+0x18000b73d	48	(unsigned int)Microsoft_Windows_Dwm_Api_Provider_Context
+	64	Microsoft_Windows_Dwm_Api_Provider_Context
+0x18000b731	48	(unsigned int)ApiEnableMMCSS_Start
+	64	ApiEnableMMCSS_Start
+	65	v1
+0x18000b72b	61	1
+0x18000b738	48	(__int64)v7
+	65	v7
+0x1800028a8	23	(Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0
+0x18000289d	21	Microsoft_Windows_Dwm_ApiEnableBits & 1
+	64	Microsoft_Windows_Dwm_ApiEnableBits
+0x18000289d	61	1
+0x18000289d	61	0
+0x1800028ae	72	v7[0] = 1073741869;
+0x1800028ae	2	v7[0] = 1073741869
+	58	v7[0]
+	65	v7
+	61	0
+0x1800028ae	61	1073741869
+0x1800028cc	72	v7[1] = fEnableMMCSS;
+0x1800028cc	2	v7[1] = fEnableMMCSS
+0x1800028cc	58	v7[1]
+	65	v7
+0x1800028cc	61	1
+0x1800028cc	65	fEnableMMCSS
+0x1800028dc	72	v3 = CApiPortClient::SendRequest((CApiPortClient *)&g_PortClient, v7, 8, &v6, nullptr, 0);
+0x1800028dc	2	v3 = CApiPortClient::SendRequest((CApiPortClient *)&g_PortClient, v7, 8, &v6, nullptr, 0)
+	65	v3
+0x1800028dc	57	CApiPortClient::SendRequest((CApiPortClient *)&g_PortClient, v7, 8, &v6, nullptr, 0)
+	64	CApiPortClient::SendRequest
+0x1800028d0	48	(CApiPortClient *)&g_PortClient
+	52	&g_PortClient
+	64	g_PortClient
+0x1800028c7	65	v7
+0x1800028bc	61	8
+0x1800028b7	52	&v6
+0x1800028b7	65	v6
+0x180002899	61	nullptr
+0x180002899	61	0
+0x1800028e1	72	v4 = v3;
+0x1800028e1	2	v4 = v3
+	65	v4
+0x1800028e1	65	v3
+0x1800028e5	73	if ( v3 < 0 )DoStackCaptureDirect(v3, 0x25u);elsev4 = v6;
+0x18000b756	71	DoStackCaptureDirect(v3, 0x25u);
+0x18000b756	72	DoStackCaptureDirect(v3, 0x25u);
+0x18000b756	57	DoStackCaptureDirect(v3, 0x25u)
+	64	DoStackCaptureDirect
+0x18000b754	65	v3
+0x18000b74f	61	0x25u
+0x1800028eb	71	v4 = v6;
+0x1800028eb	72	v4 = v6;
+0x1800028eb	2	v4 = v6
+	65	v4
+0x1800028eb	65	v6
+0x1800028e5	30	v3 < 0
+0x1800028e5	65	v3
+0x1800028e5	61	0
+0x1800028f6	73	if ( (Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0 )McTemplateU0q_EtwEventWriteTransfer(Microsoft_Windows_Dwm_Api_Provider_Context, ApiEnableMMCSS_Stop, v4);
+0x18000b772	71	McTemplateU0q_EtwEventWriteTransfer(Microsoft_Windows_Dwm_Api_Provider_Context, ApiEnableMMCSS_Stop, v4);
+0x18000b772	72	McTemplateU0q_EtwEventWriteTransfer(Microsoft_Windows_Dwm_Api_Provider_Context, ApiEnableMMCSS_Stop, v4);
+0x18000b772	57	McTemplateU0q_EtwEventWriteTransfer(Microsoft_Windows_Dwm_Api_Provider_Context, ApiEnableMMCSS_Stop, v4)
+	64	McTemplateU0q_EtwEventWriteTransfer
+0x18000b76b	64	Microsoft_Windows_Dwm_Api_Provider_Context
+0x18000b764	64	ApiEnableMMCSS_Stop
+0x18000b761	65	v4
+0x1800028f6	23	(Microsoft_Windows_Dwm_ApiEnableBits & 1) != 0
+0x1800028ef	21	Microsoft_Windows_Dwm_ApiEnableBits & 1
+	64	Microsoft_Windows_Dwm_ApiEnableBits
+0x1800028ef	61	1
+0x1800028ef	61	0
+0x180002903	80	return MilToDwmError(v4);
+0x1800028fe	57	MilToDwmError(v4)
+	64	MilToDwmError
+0x1800028fc	65	v4
